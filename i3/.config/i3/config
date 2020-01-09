@@ -161,9 +161,9 @@ bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 1 -5% # 
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 1 toggle # mute
 
 bindsym $mod+x exec i3lock -c 000000
-bindsym $mod+Shift+x exec /home/knickel/scripts/lock-suspend.sh
+bindsym $mod+Shift+x exec ~/scripts/lock-suspend.sh
 
 # Screenshot
 bindsym Print exec import -silent -window root "/tmp/screenshot_`date +%s`.png"
 
-exec_always /home/knickel/scripts/monitor-setup.sh
+exec_always ~/scripts/monitor-setup.sh
